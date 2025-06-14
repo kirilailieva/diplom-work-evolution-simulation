@@ -31,6 +31,7 @@ def replicator_dynamics(fitness, average_fitness, x):
 # Симулация през определен брой стъпки
 iterations = 20
 history = [x.copy()]
+
 for _ in range(iterations):
     fitness = calculate_fitness(a_matrix, x)
     avg_fitness = calculate_average_fitness(fitness, x)
